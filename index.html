@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ro">
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Dosis:wght@500&family=Inconsolata&family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="shortcut icon" type="image/x-icon" href="doc.ico" \s />
+<script type="text/javascript" src="quiz.js"></script>
+<head>
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+	<title>  Test </title>
+</head>
+<body>
+	<div class="title-text">
+		<h1> Test: Food Partitives </h1>
+	</div>
+	<br><br>
+	<div class="content">
+		<h2> Select the right word and type in the input field: </h2>
+		<br>
+		<form class="test" id="test" name="test" action="go.php" method="POST">
+			<p>1. Please go to the store and pick up a <input type="text" id="q1" name="q1" autocomplete="off"> of milk.</p> 
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="ca1" >A)bag</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>B)half gallon</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>C)dozen</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>D)pound</span></p><br>
+
+			<hr id="line"><br>
+
+			<p>2. This recipe calls for a <input type="text" id="q2" name="q2" autocomplete="off"> of butter.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>A)dozen</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="ca2">B)tube</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>C)stick</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>D)can</span></p><br>
+			
+			<hr id="line"><br>
+
+			<p>3. My cat eats a <input type="text" id="q3" name="q3" autocomplete="off"> of tuna every day.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>A)can</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>B)loaf</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="ca3">C)bottle</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>D)bag</span></p><br>
+			
+			<hr id="line"><br>
+
+			<p>4. I like to drink a <input type="text" id="q4" name="q4" autocomplete="off"> of mineral water after I exercise.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="ca4">A)pound</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>B)stick</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>C)teaspon</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>D)bottle</span></p><br>
+			
+			<hr id="line"><br>
+
+			<p>5. I want to make a peanut butter and jelly sandwich. But the <input type="text" id="q5" name="q5" autocomplete="off"> of peanut butter is empty.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>A)six-pack</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="ca5">B)jar</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>C)head</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>D)box</span></p><br>
+			
+			<hr id="line"><br>
+
+			<p>6. I need three <input type="text" id="q6" name="q6" autocomplete="off"> of yogurt from the dairy section.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>A)tubes</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>B)pounds</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="ca6">C)containers</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>D)dozen</span> </p><br>
+			
+			<hr id="line"><br>
+
+			<p>7. If you want coffee with breakfast, you should buy a <input type="text" id="q7" name="q7" autocomplete="off"> of coffee tonight.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="ca7">A)gallon</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>B)pound</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>C)cup</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>D)quart</span></p><br>
+			
+			<hr id="line"><br>
+
+			<p>8. I would like a large, green <input type="text" id="q8" name="q8" autocomplete="off"> of lettuce for tonight's salad.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>A)head</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="ca8">B)jar</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>C)can</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>D)half a cup</span></p><br>
+			
+			<hr id="line"><br>
+
+			<p>9. Would yoy like a <input type="text" id="q9" name="q9" autocomplete="off"> of chocolate or vanilla ice cream?.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>A)half dozen</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>B)pint</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="ca9">C)bag</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>D)can</span></p><br>
+			
+			<hr id="line"><br>
+
+			<p>10. Pick up <input type="text" id="q10" name="q10" autocomplete="off"> of whole wheat bread at the bakery.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="ca10">A)half a pound</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>B)a box</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>C)a twelve-pack</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>D)a loaf</span></p><br>
+
+			<p id="grade">Nota: </p>
+
+			<div class="buttons" id="buttons">
+			<button id="button1" type="reset"> Sterge tot </button>
+			<button id="button2" type="button" onclick="check()"> Finiseaza </button>
+		    </div>
+		</form>
+	</div>	
+</body>
+</html>
